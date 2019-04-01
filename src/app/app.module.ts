@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmailListComponent } from './email-list/email-list.component';
+import { EmailDetailComponent } from './email-detail/email-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmailListComponent
+    EmailListComponent,
+    EmailDetailComponent
   ],
   imports: [
     BrowserModule,
