@@ -5,18 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmailListComponent } from './email-list/email-list.component';
 import { EmailDetailComponent } from './email-detail/email-detail.component';
+import { CustomPreload } from './custom-preload.module';
+import { SelectivePreloadingStrategyService } from './selective-preloading-strategy.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EmailListComponent,
-    EmailDetailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    CustomPreload
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
